@@ -8,7 +8,7 @@
   - [第一部分:CloudSlit-Fullnode（数据的私人检索网络全节点 - Dao Tools）](#第一部分cloudslit-fullnode数据的私人检索网络全节点---dao-tools)
   - [第二部分:CloudSlit-Provider（去中心化的数据私人检索安全网络隧道提供商 - Network Miner）](#第二部分cloudslit-provider去中心化的数据私人检索安全网络隧道提供商---network-miner)
   - [第三部分:CloudSlit-Contracts](#第三部分cloudslit-contracts)
-  - [第四部分：CloudSlit-verifier(去中心化网络质量校验者)](#第四部分cloudslit-verifier去中心化网络质量校验者)
+  - [第四部分:CloudSlit-verifier(去中心化网络质量校验者)](#第四部分cloudslit-verifier去中心化网络质量校验者)
   - [第五部分:CloudSlit-Client（数据的私人检索网络客户端）](#第五部分cloudslit-client数据的私人检索网络客户端)
 - [我们遇到的挑战](#我们遇到的挑战)
 - [我们引以为豪的成就](#我们引以为豪的成就)
@@ -63,7 +63,7 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 合约地址是0x4E9bfAB50AE5aA47838921450BBc1b12a81798ba
 
-## 第四部分：[CloudSlit-verifier](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/verifier)(去中心化网络质量校验者)
+## 第四部分:[CloudSlit-verifier](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/verifier)(去中心化网络质量校验者)
 我们为去中心化可信带宽市场提供了verifier组件，任何人都可以运行网络检验者，对于正在进行的订单进行网络质量的监控，对于非法及恶劣网络提供者进行检测并惩罚。
 
 <img width="935" alt="image" src="https://user-images.githubusercontent.com/34047788/190649698-9a48853b-aae4-4951-9ffe-f18ae23e8fc9.png">
