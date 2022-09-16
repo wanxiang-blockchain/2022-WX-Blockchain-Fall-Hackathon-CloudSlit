@@ -30,7 +30,7 @@ CloudSlit旨在构建全球web3去中心化的私人数据检索安全网络体�
 
 # 演示视频
 
-https://res.cloudinary.com/malloc/video/upload/v1663340904/cloudslit/cloudslit-vena-cn_qxedk7.mov
+https://raw.githubusercontent.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/main/ppt/cloudslit-vena-cn.mp4
 
 # 我们如何建造它
 
