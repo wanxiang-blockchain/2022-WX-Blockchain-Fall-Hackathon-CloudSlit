@@ -1,0 +1,263 @@
+basePath: /api/v1
+definitions:
+  controller.Res:
+    properties:
+      code:
+        type: integer
+      data:
+        type: object
+      message:
+        type: string
+    type: object
+  mparam.AddClient:
+    properties:
+      duration:
+        description: Port        int    `json:"port" form:"port" binding:"required"`         //
+          443
+        type: integer
+      name:
+        type: string
+      peer_id:
+        type: string
+      resource_cid:
+        type: string
+    required:
+    - duration
+    - name
+    - peer_id
+    - resource_cid
+    type: object
+  mparam.AddResource:
+    properties:
+      host:
+        description: api.github.com,192.168.1.1/16
+        type: string
+      name:
+        type: string
+      port:
+        description: 80-443;3306;6379
+        type: string
+      type:
+        enum:
+        - cidr
+        - dns
+        type: string
+    required:
+    - host
+    - name
+    - port
+    type: object
+  mparam.NotifyClient:
+    properties:
+      uuid:
+        type: string
+    required:
+    - uuid
+    type: object
+host: 127.0.0.1:80
+info:
+  contact: {}
+  description: This is FullNode api list.
+  title: FullNode API
+  version: 1.0.0
+paths:
+  /a/{hash}:
+    get:
+      description: 机器鉴权
+      parameters:
+      - description: hash
+        in: path
+        name: hash
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: MachineOauth
+      tags:
+      - ZTA ControlPlane
+  /access/client:
+    get:
+      description: 获取ZTA的client
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: ClientList
+      tags:
+      - ZTA
+    post:
+      consumes:
+      - application/json
+      description: 新增ZTA的client
+      parameters:
+      - description: 新增ZTA的client
+        in: body
+        name: Client
+        required: true
+        schema:
+          $ref: '#/definitions/mparam.AddClient'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: AddClient
+      tags:
+      - ZTA
+  /access/client/notify:
+    post:
+      consumes:
+      - application/json
+      description: 接收client订单状态改变的通知
+      parameters:
+      - description: 接收client订单状态改变的通知
+        in: body
+        name: NotifyClient
+        required: true
+        schema:
+          $ref: '#/definitions/mparam.NotifyClient'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: NotifyClient
+      tags:
+      - ZTA
+  /access/resource:
+    get:
+      description: 获取ZTA的resource
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: ResourceList
+      tags:
+      - ZTA
+    post:
+      consumes:
+      - application/json
+      description: 新增ZTA的resource
+      parameters:
+      - description: 新增ZTA的resource
+        in: body
+        name: Resource
+        required: true
+        schema:
+          $ref: '#/definitions/mparam.AddResource'
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: AddResource
+      tags:
+      - ZTA
+  /access/resource/{uuid}:
+    delete:
+      description: 删除ZTA的resource
+      parameters:
+      - description: 主键ID
+        in: path
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: DelResource
+      tags:
+      - ZTA
+  /controlplane/machine/{machine_id}:
+    get:
+      description: 根据机器码获取客户端鉴权的url
+      parameters:
+      - description: machine_id
+        in: path
+        name: machine_id
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: LoginUrl
+      tags:
+      - ZTA ControlPlane
+  /machine/auth/poll:
+    get:
+      description: 机器鉴权
+      parameters:
+      - description: 轮询的主题
+        in: query
+        name: category
+        required: true
+        type: string
+      - description: 超时时间，单位：秒
+        in: query
+        name: timeout
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: MachineLongPoll
+      tags:
+      - ZTA ControlPlane
+  /node:
+    get:
+      description: 获取全部节点
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: ListNode
+      tags:
+      - ZTA Node
+  /user/refresh:
+    post:
+      consumes:
+      - application/json
+      description: 用户刷新token
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.Res'
+      summary: UserRefresh
+      tags:
+      - ZTA
+swagger: "2.0"
