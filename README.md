@@ -4,8 +4,8 @@
 - [灵感](#灵感)
 - [它的作用](#它的作用)
 - [我们如何建造它](#我们如何建造它)
-  - [第一部分:CloudSlit-Fullnode（Zero Trust Secure Data Management Platform - Dao Tools）](#第一部分cloudslit-fullnodezero-trust-secure-data-management-platform---dao-tools)
-  - [第二部分:CloudSlit-Provider（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）](#第二部分cloudslit-providerdecentralized-zero-trust-secure-network-tunnel-provider---network-miner)
+  - [第一部分:CloudSlit-Fullnode（数据的私人检索网络全节点 - Dao Tools）](#第一部分cloudslit-fullnode数据的私人检索网络全节点---dao-tools)
+  - [第二部分:CloudSlit-Provider（去中心化的数据私人检索安全网络隧道提供商 - Network Miner）](#第二部分cloudslit-provider去中心化的数据私人检索安全网络隧道提供商---network-miner)
   - [第三部分:CloudSlit-Contracts](#第三部分cloudslit-contracts)
   - [第五部分：CloudSlit-verifier(去中心化网络质量校验者)](#第五部分cloudslit-verifier去中心化网络质量校验者)
   - [第五部分:CloudSlit-Client（数据的私人检索网络客户端）](#第五部分cloudslit-client数据的私人检索网络客户端)
@@ -25,11 +25,12 @@ CloudSlit使用区块链、web3和数据的私人检索安全网络技术来增�
 
 CloudSlit旨在构建全球web3去中心化的数据的私人检索安全网络体系，帮助用户夺回web2下被巨头侵蚀的隐私安全信息，让目前全球火热的零信任安全网络技术结合web3更好地帮助用户掌握自己的安全隐私数据，给用户良好的数据的私人检索安全网络产品和平台体验。
 
+
 # 我们如何建造它
 
 CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商、智能合约、网络质量校验者、网络客户端程序。具体设计介绍如下:
 
-## 第一部分:[CloudSlit-Fullnode](https://github.com/CloudSlit/cloudslit/tree/main/fullnode)（Zero Trust Secure Data Management Platform - Dao Tools）
+## 第一部分:[CloudSlit-Fullnode](https://github.com/CloudSlit/cloudslit/tree/main/fullnode)（数据的私人检索网络全节点 - Dao Tools）
 
 任何人都可以运行Fullnode，它托管去中心化网络的元数据，并提供元数据联网和事务匹配平台。它集成了来自所有提供者的元数据，提供者每隔几秒钟使用基于[libp2p的pubsub](https://github.com/libp2p/go-libp2p)向Fullnode保持心跳，以证明他们在线。
 
@@ -37,14 +38,16 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 对于所有用户和Dao的数据，我们使用Filecoin的web3.storage对用户数据进行去中心化存储。
 
-![https://user-images.githubusercontent.com/52234994/179184171-f881f3ee-e7ca-45ad-94e1-813b9964e524.png](https://user-images.githubusercontent.com/52234994/179184171-f881f3ee-e7ca-45ad-94e1-813b9964e524.png)
+<img width="929" alt="image" src="https://user-images.githubusercontent.com/34047788/190649560-9bb3d443-3a3e-4747-8805-931c79db55b0.png">
 
-## 第二部分:[CloudSlit-Provider](https://github.com/CloudSlit/cloudslit/tree/main/provider)（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）
+
+## 第二部分:[CloudSlit-Provider](https://github.com/CloudSlit/cloudslit/tree/main/provider)（去中心化的数据私人检索安全网络隧道提供商 - Network Miner）
 
 我们的节点通过libp2p的kademlia DHT和IPFS网络通过对等点发现和路由实现自动组网，通过libp2p的PubSub函数实现多个节点之间的数据同步。
 对于所有用户和Dao数据，我们使用Filecoin的web3.storage对用户数据进行分散存储。
 
-![https://user-images.githubusercontent.com/52234994/179186444-81e0f4de-a2c1-4607-bf66-275d20c2fe0c.png](https://user-images.githubusercontent.com/52234994/179186444-81e0f4de-a2c1-4607-bf66-275d20c2fe0c.png)
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/34047788/190649367-aea3230f-6c87-4b74-b692-e328ed33a78f.png">
+
 
 ## 第三部分:[CloudSlit-Contracts](https://github.com/CloudSlit/cloudslit/tree/main/contract)
 
@@ -53,13 +56,17 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 ## 第五部分：[CloudSlit-verifier](#)(去中心化网络质量校验者)
 我们为去中心化可信带宽市场提供了verifier组件，任何人都可以运行网络检验者，对于正在进行的订单进行网络质量的监控，对于非法及恶劣网络提供者进行检测并惩罚。
 
+<img width="935" alt="image" src="https://user-images.githubusercontent.com/34047788/190649698-9a48853b-aae4-4951-9ffe-f18ae23e8fc9.png">
+
 
 
 ## 第五部分:[CloudSlit-Client](https://github.com/CloudSlit/cloudslit/tree/main/client)（数据的私人检索网络客户端）
 
 客户端软件用户连接到提供商以建立零信任网络安全隧道。
 
-![https://user-images.githubusercontent.com/52234994/179190148-ebd19f1d-90f0-4377-a57d-7c4942d5e0b3.png](https://user-images.githubusercontent.com/52234994/179190148-ebd19f1d-90f0-4377-a57d-7c4942d5e0b3.png)
+<img width="932" alt="image" src="https://user-images.githubusercontent.com/34047788/190649859-ee288f05-3581-4323-b672-de9546f8758d.png">
+
+
 
 # 我们遇到的挑战
 
