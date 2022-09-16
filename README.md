@@ -8,7 +8,7 @@
   - [第二部分:CloudSlit-Provider（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）](#第二部分cloudslit-providerdecentralized-zero-trust-secure-network-tunnel-provider---network-miner)
   - [第三部分:CloudSlit-Contracts](#第三部分cloudslit-contracts)
   - [第五部分：CloudSlit-verifier(去中心化网络质量校验者)](#第五部分cloudslit-verifier去中心化网络质量校验者)
-  - [第五部分:CloudSlit-Client（Zero Trust Secure Network Access Client）](#第五部分cloudslit-clientzero-trust-secure-network-access-client)
+  - [第五部分:CloudSlit-Client（数据的私人检索网络客户端）](#第五部分cloudslit-client数据的私人检索网络客户端)
 - [我们遇到的挑战](#我们遇到的挑战)
 - [我们引以为豪的成就](#我们引以为豪的成就)
 
@@ -17,17 +17,17 @@
 
 目前可用于具有隐私保证的交互式(低延迟)通信的选项非常有限，并且迄今为止开发的解决方案都集中在单一源数据发布者的传统web模型上，并且在延迟和威胁模型方面，它都具有缺陷。
 
-CloudSlit使用区块链、web3和零信任安全网络技术来增强和改善用户私有化网络安全/隐私的平衡。
+CloudSlit使用区块链、web3和数据的私人检索安全网络技术来增强和改善用户私有化网络安全/隐私的平衡。
 
-为了保护web2下公众的网络安全，出现了非常流行的零信任安全架构。我们团队一直在做零信任安全方向的开源产品，但是我们发现很多零信任网络安全公司虽然提供零信任安全平台，但是他们垄断用户的网络接入节点，集中存储用户的核心安全配置文件。因此，我们正在考虑是否可以使用web3技术来实现零信任安全网络。我们设计了CloudSlit项目，为用户提供去中心化的零信任安全网络平台，帮助用户掌握自己的安全数据。
+为了保护web2下公众的网络安全，出现了非常流行的零信任安全架构。我们团队一直在做零信任安全方向的开源产品，但是我们发现很多零信任网络安全公司虽然提供零信任安全平台，但是他们垄断用户的网络接入节点，集中存储用户的核心安全配置文件。因此，我们正在考虑是否可以使用web3技术来实现数据的私人检索安全网络。我们设计了CloudSlit项目，为用户提供去中心化的数据的私人检索安全网络平台，帮助用户掌握自己的安全数据。
 
 # 它的作用
 
-CloudSlit旨在构建全球web3去中心化的零信任安全网络体系，帮助用户夺回web2下被巨头侵蚀的隐私安全信息，让目前全球火热的零信任安全网络技术结合web3更好地帮助用户掌握自己的安全隐私数据，给用户良好的零信任安全网络产品和平台体验。
+CloudSlit旨在构建全球web3去中心化的数据的私人检索安全网络体系，帮助用户夺回web2下被巨头侵蚀的隐私安全信息，让目前全球火热的零信任安全网络技术结合web3更好地帮助用户掌握自己的安全隐私数据，给用户良好的数据的私人检索安全网络产品和平台体验。
 
 # 我们如何建造它
 
-CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商、智能合约、网络质量校验者和网络客户端程序。具体设计介绍如下:
+CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商、智能合约、网络质量校验者、网络客户端程序。具体设计介绍如下:
 
 ## 第一部分:[CloudSlit-Fullnode](https://github.com/CloudSlit/cloudslit/tree/main/fullnode)（Zero Trust Secure Data Management Platform - Dao Tools）
 
@@ -55,7 +55,7 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 
 
-## 第五部分:[CloudSlit-Client](https://github.com/CloudSlit/cloudslit/tree/main/client)（Zero Trust Secure Network Access Client）
+## 第五部分:[CloudSlit-Client](https://github.com/CloudSlit/cloudslit/tree/main/client)（数据的私人检索网络客户端）
 
 客户端软件用户连接到提供商以建立零信任网络安全隧道。
 
@@ -71,4 +71,4 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 # 我们引以为豪的成就
 
-我们已经能够满足选择去中心化网络隧道矿工的用户，创建智能合约订单，支付订单，自动构建零信任双向网络隧道，享受全栈去中心化零信任网络安全隧道体验，这是我们最大的喜悦
+我们已经能够满足选择去中心化网络隧道矿工的用户，创建智能合约订单，支付订单，自动构建数据的私人检索双向网络隧道，享受全栈去中心化数据的私人检索网络安全隧道体验，这是我们最大的喜悦
