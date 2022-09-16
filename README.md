@@ -37,7 +37,8 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 对于所有用户和Dao的数据，我们使用Filecoin的web3.storage对用户数据进行去中心化存储。
 
-![https://user-images.githubusercontent.com/52234994/179184171-f881f3ee-e7ca-45ad-94e1-813b9964e524.png](https://user-images.githubusercontent.com/52234994/179184171-f881f3ee-e7ca-45ad-94e1-813b9964e524.png)
+<img width="929" alt="image" src="https://user-images.githubusercontent.com/34047788/190649560-9bb3d443-3a3e-4747-8805-931c79db55b0.png">
+
 
 ## 第二部分:[CloudSlit-Provider](https://github.com/CloudSlit/cloudslit/tree/main/provider)（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）
 
