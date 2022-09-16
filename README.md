@@ -72,7 +72,7 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 ## 第五部分:[CloudSlit-Client](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/client)（数据的私人检索网络客户端）
 
-客户端软件用户连接到提供商以建立零信任网络安全隧道。
+客户端软件用户连接到提供商以建立数据私有检索网络安全隧道。
 
 <img width="932" alt="image" src="https://user-images.githubusercontent.com/34047788/190649859-ee288f05-3581-4323-b672-de9546f8758d.png">
 
