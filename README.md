@@ -55,7 +55,7 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 ## 第五部分：[CloudSlit-verifier](#)(去中心化网络质量校验者)
 我们为去中心化可信带宽市场提供了verifier组件，任何人都可以运行网络检验者，对于正在进行的订单进行网络质量的监控，对于非法及恶劣网络提供者进行检测并惩罚。
 
-<center><img width="935" alt="image" src="https://user-images.githubusercontent.com/34047788/190649698-9a48853b-aae4-4951-9ffe-f18ae23e8fc9.png"></center>
+<img width="935" alt="image" src="https://user-images.githubusercontent.com/34047788/190649698-9a48853b-aae4-4951-9ffe-f18ae23e8fc9.png">
 
 
 
