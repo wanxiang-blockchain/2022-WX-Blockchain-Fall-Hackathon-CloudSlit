@@ -25,7 +25,7 @@ CloudSlit使用区块链、web3和数据的私人检索安全网络技术来增�
 
 CloudSlit旨在构建全球web3去中心化的私人数据检索安全网络体系，帮助用户夺回web2下被巨头侵蚀的隐私安全信息，让目前全球火热的零信任安全网络技术结合web3更好地帮助用户掌握自己的安全隐私数据，给用户良好的数据私人检索安全网络产品体验。
 
-<img width="1172" alt="image" src="https://user-images.githubusercontent.com/34047788/190673232-36fe2e34-bad8-4cbc-8e18-1895ae1cbfec.png">
+<img width="1176" alt="image" src="https://user-images.githubusercontent.com/34047788/190673496-5bbb9c23-8910-4192-9911-080230934b47.png">
 
 
 
