@@ -5,11 +5,11 @@
 - [它的作用](#它的作用)
 - [演示视频](#演示视频)
 - [我们如何建造它](#我们如何建造它)
-  - [第一部分:CloudSlit-Fullnode（数据的私人检索网络全节点 - Dao Tools）](#第一部分cloudslit-fullnode数据的私人检索网络全节点---dao-tools)
-  - [第二部分:CloudSlit-Provider（去中心化的数据私人检索安全网络隧道提供商 - Network Miner）](#第二部分cloudslit-provider去中心化的数据私人检索安全网络隧道提供商---network-miner)
+  - [第一部分:CloudSlit-Fullnode(数据的私人检索网络全节点 - Dao Tools)](#第一部分cloudslit-fullnode数据的私人检索网络全节点---dao-tools)
+  - [第二部分:CloudSlit-Provider(去中心化的数据私人检索安全网络隧道提供商 - Network Miner)](#第二部分cloudslit-provider去中心化的数据私人检索安全网络隧道提供商---network-miner)
   - [第三部分:CloudSlit-Contracts(智能合约：支持万纳链)](#第三部分cloudslit-contracts智能合约支持万纳链)
   - [第四部分:CloudSlit-verifier(去中心化网络质量校验者)](#第四部分cloudslit-verifier去中心化网络质量校验者)
-  - [第五部分:CloudSlit-Client（数据的私人检索网络客户端）](#第五部分cloudslit-client数据的私人检索网络客户端)
+  - [第五部分:CloudSlit-Client(数据的私人检索网络客户端)](#第五部分cloudslit-client数据的私人检索网络客户端)
 - [我们遇到的挑战](#我们遇到的挑战)
 - [我们引以为豪的成就](#我们引以为豪的成就)
 
@@ -36,7 +36,7 @@ https://raw.githubusercontent.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Ha
 
 CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商、智能合约、网络质量校验者、网络客户端程序，具体介绍如下:
 
-## 第一部分:[CloudSlit-Fullnode](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/fullnode)（数据的私人检索网络全节点 - Dao Tools）
+## 第一部分:[CloudSlit-Fullnode](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/fullnode)(数据的私人检索网络全节点 - Dao Tools)
 
 任何人都可以运行Fullnode，它托管去中心化网络的元数据，并提供元数据联网和事务匹配平台。它集成了来自所有提供者的元数据，提供者每隔几秒钟使用基于[libp2p的pubsub](https://github.com/libp2p/go-libp2p)向Fullnode保持心跳，以证明他们在线。
 
@@ -47,7 +47,7 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 <img width="929" alt="image" src="https://user-images.githubusercontent.com/34047788/190649560-9bb3d443-3a3e-4747-8805-931c79db55b0.png">
 
 
-## 第二部分:[CloudSlit-Provider](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/provider)（去中心化的数据私人检索安全网络隧道提供商 - Network Miner）
+## 第二部分:[CloudSlit-Provider](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/provider)(去中心化的数据私人检索安全网络隧道提供商 - Network Miner)
 
 我们的节点通过libp2p的kademlia DHT和IPFS网络通过对等点发现和路由实现自动组网，通过libp2p的PubSub函数实现多个节点之间的数据同步。
 对于所有用户和Dao数据，我们使用Filecoin的web3.storage对用户数据进行分散存储。
@@ -70,7 +70,7 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 
 
-## 第五部分:[CloudSlit-Client](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/client)（数据的私人检索网络客户端）
+## 第五部分:[CloudSlit-Client](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/client)(数据的私人检索网络客户端)
 
 客户端软件用户连接到提供商以建立数据私有检索网络安全隧道。
 
