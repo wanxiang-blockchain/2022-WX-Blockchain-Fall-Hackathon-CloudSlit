@@ -34,7 +34,7 @@ https://res.cloudinary.com/malloc/video/upload/v1663340904/cloudslit/cloudslit-v
 
 # 我们如何建造它
 
-CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商、智能合约、网络质量校验者、网络客户端程序。具体设计介绍如下:
+CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商、智能合约、网络质量校验者、网络客户端程序，具体介绍如下:
 
 ## 第一部分:[CloudSlit-Fullnode](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/fullnode)（数据的私人检索网络全节点 - Dao Tools）
 
