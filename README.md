@@ -1,88 +1,68 @@
 # 2022-WX-Blockchain-Fall-Hackathon-CloudSlit
 
 - [2022-WX-Blockchain-Fall-Hackathon-CloudSlit](#2022-wx-blockchain-fall-hackathon-cloudslit)
-- [Inspiration](#inspiration)
-- [What it does](#what-it-does)
-- [How we built it](#how-we-built-it)
-    - [Part one: CloudSlit-Fullnode（Zero Trust Secure Data Management Platform - Dao Tools）](#part-one-cloudslit-fullnodezero-trust-secure-data-management-platform---dao-tools)
-    - [Part two: CloudSlit-Provider（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）](#part-two-cloudslit-providerdecentralized-zero-trust-secure-network-tunnel-provider---network-miner)
-    - [Part three: CloudSlit-Contract](#part-three-cloudslit-contract)
-    - [Part four: CloudSlit-Client（Zero Trust Secure Network Access Client）](#part-four-cloudslit-clientzero-trust-secure-network-access-client)
-- [Challenges we ran into](#challenges-we-ran-into)
-- [Accomplishments that we're proud of](#accomplishments-that-were-proud-of)
-- [What we learned](#what-we-learned)
-- [What's next for](#whats-next-for)
+- [灵感](#灵感)
+- [它的作用](#它的作用)
+- [我们如何建造它](#我们如何建造它)
+  - [第一部分:CloudSlit-Fullnode（Zero Trust Secure Data Management Platform - Dao Tools）](#第一部分cloudslit-fullnodezero-trust-secure-data-management-platform---dao-tools)
+  - [第二部分:CloudSlit-Provider（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）](#第二部分cloudslit-providerdecentralized-zero-trust-secure-network-tunnel-provider---network-miner)
+  - [第三部分:CloudSlit-Contracts](#第三部分cloudslit-contracts)
+  - [第四部分:CloudSlit-Client（Zero Trust Secure Network Access Client）](#第四部分cloudslit-clientzero-trust-secure-network-access-client)
+- [我们遇到的挑战](#我们遇到的挑战)
+- [我们引以为豪的成就](#我们引以为豪的成就)
 
 
-# Inspiration
+# 灵感
 
-The options currently available for interactive (low-latency) communication with privacy guarantees are very limited, and the solutions developed to date have focused on the traditional web model of a single-source data publisher, and in terms of the latency and threat models it incurs All have flaws. 
+目前可用于具有隐私保证的交互式(低延迟)通信的选项非常有限，并且迄今为止开发的解决方案都集中在单一源数据发布者的传统web模型上，并且在延迟和威胁模型方面，它都具有缺陷。
 
-CloudSlit uses blockchain, web3, and zero-trust security network technologies to enhance and improve the balance of user privatization network security/privacy. 
+CloudSlit使用区块链、web3和零信任安全网络技术来增强和改善用户私有化网络安全/隐私的平衡。
 
-In order to protect the network security of the public under web2, a very popular zero-trust security architecture has emerged. Our team has been working on open-source products in the direction of zero-trust security, but we found that although many zero-trust network security companies provide zero-trust security platforms, they monopolize users' network access nodes and centrally store users' core security configuration files. Therefore, we are thinking about whether we can use web3 technology to enable zero trust security network. We designed the CloudSlit project to provide users with a decentralized zero-trust secure network platform to help users master their own secure data.
+为了保护web2下公众的网络安全，出现了非常流行的零信任安全架构。我们团队一直在做零信任安全方向的开源产品，但是我们发现很多零信任网络安全公司虽然提供零信任安全平台，但是他们垄断用户的网络接入节点，集中存储用户的核心安全配置文件。因此，我们正在考虑是否可以使用web3技术来实现零信任安全网络。我们设计了CloudSlit项目，为用户提供去中心化的零信任安全网络平台，帮助用户掌握自己的安全数据。
 
-# What it does
+# 它的作用
 
-CloudSlit aims to build a global web3 decentralized zero trust security network system to help users regain the private security information eroded by giants under web2, so that the current global hot zero trust security network technology can better help users master their own security privacy data in combination with web3, and give users a good zero trust security network products and platform experience.
+CloudSlit旨在构建全球web3去中心化的零信任安全网络体系，帮助用户夺回web2下被巨头侵蚀的隐私安全信息，让目前全球火热的零信任安全网络技术结合web3更好地帮助用户掌握自己的安全隐私数据，给用户良好的零信任安全网络产品和平台体验。
 
-# How we built it
+# 我们如何建造它
 
-The design part of the CloudSlit project includes decentralized full nodes, network miner providers, smart contracts, and network client programs. The specific design introduction is as follows:
+CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商、智能合约、网络质量校验者和网络客户端程序。具体设计介绍如下:
 
-### Part one: [CloudSlit-Fullnode](https://github.com/CloudSlit/cloudslit/tree/main/fullnode)（Zero Trust Secure Data Management Platform - Dao Tools）
+## 第一部分:[CloudSlit-Fullnode](https://github.com/CloudSlit/cloudslit/tree/main/fullnode)（Zero Trust Secure Data Management Platform - Dao Tools）
 
-Anyone can run a Fullnode, which hosts the metadata of the decentralized network, and provides a metadata networking and transaction matching platform.It integrates metadata from all Providers and Providers  keep heartbeat to Fullnode every few seconds using pubsub based on [libp2p](https://github.com/libp2p/go-libp2p) to prove they are online.
+任何人都可以运行Fullnode，它托管去中心化网络的元数据，并提供元数据联网和事务匹配平台。它集成了来自所有提供者的元数据，提供者每隔几秒钟使用基于[libp2p的pubsub](https://github.com/libp2p/go-libp2p)向Fullnode保持心跳，以证明他们在线。
 
-Users can find resources and nodes to build their own secure and anonymous network tunnel.They just need to pay a few tokens and the Provide who provides node can get these token as rewards.
+用户可以找到资源和节点来构建自己的安全匿名网络隧道。他们只需要支付一些代币，提供者节点就可以得到这些代币作为奖励。
 
-For all users and Dao's data, we use Filecoin's web3.storage decentralized storage of user data.
+对于所有用户和Dao的数据，我们使用Filecoin的web3.storage对用户数据进行去中心化存储。
 
 ![https://user-images.githubusercontent.com/52234994/179184171-f881f3ee-e7ca-45ad-94e1-813b9964e524.png](https://user-images.githubusercontent.com/52234994/179184171-f881f3ee-e7ca-45ad-94e1-813b9964e524.png)
 
-### Part two: [CloudSlit-Provider](https://github.com/CloudSlit/cloudslit/tree/main/provider)（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）
+## 第二部分:[CloudSlit-Provider](https://github.com/CloudSlit/cloudslit/tree/main/provider)（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）
 
-Our nodes realize automatic networking through peer discovery and routing through libp2p kademlia DHT and IPFS networks, and realize data synchronization between multiple nodes through libp2p's PubSub function.
-For all user and Dao data, we use Filecoin's web3.storage for decentralized storage of user data.
+我们的节点通过libp2p的kademlia DHT和IPFS网络通过对等点发现和路由实现自动组网，通过libp2p的PubSub函数实现多个节点之间的数据同步。
+对于所有用户和Dao数据，我们使用Filecoin的web3.storage对用户数据进行分散存储。
 
 ![https://user-images.githubusercontent.com/52234994/179186444-81e0f4de-a2c1-4607-bf66-275d20c2fe0c.png](https://user-images.githubusercontent.com/52234994/179186444-81e0f4de-a2c1-4607-bf66-275d20c2fe0c.png)
 
-### Part three: [CloudSlit-Contract](https://github.com/CloudSlit/cloudslit/tree/main/contract)
+## 第三部分:[CloudSlit-Contracts](https://github.com/CloudSlit/cloudslit/tree/main/contract)
 
-We develop smart contracts based on the OpenZeppelin library, follow the ERC20 token standard and use OpenZeppelin Upgrades to write upgradeable contracts.
-Our smart contracts are deployed on the Ethereum testnet. We provide many methods in smart contracts to ensure a secure transaction process and a secure transaction environment.
+我们为去中心化可信带宽市场提供了完整的智能合约，我们的智能合约部署在**万纳链**节点上，我们在智能合约中提供了许多方法来确保安全的交易流程和安全的交易环境。
 
-### Part four: [CloudSlit-Client](https://github.com/CloudSlit/cloudslit/tree/main/client)（Zero Trust Secure Network Access Client）
+## 第四部分:[CloudSlit-Client](https://github.com/CloudSlit/cloudslit/tree/main/client)（Zero Trust Secure Network Access Client）
 
-The client software user connects to the provider to establish a zero trust network security tunnel.
+客户端软件用户连接到提供商以建立零信任网络安全隧道。
 
 ![https://user-images.githubusercontent.com/52234994/179190148-ebd19f1d-90f0-4377-a57d-7c4942d5e0b3.png](https://user-images.githubusercontent.com/52234994/179190148-ebd19f1d-90f0-4377-a57d-7c4942d5e0b3.png)
 
-# Challenges we ran into
+# 我们遇到的挑战
 
-1. Build a stable decentralized network
-2. Build a decentralized pubsub signaling mechanism to meet the coordination of network tunnel actions between miners and full nodes.
-3. Build decentralized storage and encryption and decryption of user security rules data.
+1.建立一个稳定的分散网络
 
-# Accomplishments that we're proud of
+2.构建一个去中心化的pubsub信令机制，满足矿工和全节点之间网络隧道动作的协调。
 
-We have been able to satisfy users who choose decentralized network tunnel miners, create smart contract orders, pay orders, automatically build zero-trust two-way network tunnels, and enjoy full-stack decentralized zero-trust network security tunnel experience, which is our greatest joy and pride.
+3.构建用户安全规则数据的分散存储和加密解密。
 
-CloudSlit helps users regain control of their zero-trust security data and helps users experience the advantages of web3.
+# 我们引以为豪的成就
 
-CloudSlit has gained a lot of downloads since it was open sourced.
-
-![https://res.cloudinary.com/malloc/image/upload/v1659597089/cloudslit/Untitled_paimfj.png](https://res.cloudinary.com/malloc/image/upload/v1659597089/cloudslit/Untitled_paimfj.png)
-
-# What we learned
-
-1. Decentralized networking technology based on IPFS libp2p
-2. Decentralized data storage technology based on web3.storage.
-3. Based on the core program logic of smart contracts.
-
-# What's next for
-
-1. Optimize smart contracts to reduce gas costs.
-2. Build more CloudSlit network miner nodes to enrich CloudSlit's decentralized network.
-3. Build a user community and let more interested users participate in the use.
-4. The open source community that builds the program, returns control of the program to the open source community.
+我们已经能够满足选择去中心化网络隧道矿工的用户，创建智能合约订单，支付订单，自动构建零信任双向网络隧道，享受全栈去中心化零信任网络安全隧道体验，这是我们最大的喜悦
