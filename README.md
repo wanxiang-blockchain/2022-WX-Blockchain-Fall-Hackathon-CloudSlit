@@ -7,7 +7,8 @@
   - [第一部分:CloudSlit-Fullnode（Zero Trust Secure Data Management Platform - Dao Tools）](#第一部分cloudslit-fullnodezero-trust-secure-data-management-platform---dao-tools)
   - [第二部分:CloudSlit-Provider（Decentralized Zero Trust Secure Network Tunnel Provider - Network Miner）](#第二部分cloudslit-providerdecentralized-zero-trust-secure-network-tunnel-provider---network-miner)
   - [第三部分:CloudSlit-Contracts](#第三部分cloudslit-contracts)
-  - [第四部分:CloudSlit-Client（Zero Trust Secure Network Access Client）](#第四部分cloudslit-clientzero-trust-secure-network-access-client)
+  - [第五部分：CloudSlit-verifier(去中心化网络质量校验者)](#第五部分cloudslit-verifier去中心化网络质量校验者)
+  - [第五部分:CloudSlit-Client（Zero Trust Secure Network Access Client）](#第五部分cloudslit-clientzero-trust-secure-network-access-client)
 - [我们遇到的挑战](#我们遇到的挑战)
 - [我们引以为豪的成就](#我们引以为豪的成就)
 
@@ -49,7 +50,12 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 
 我们为去中心化可信带宽市场提供了完整的智能合约，我们的智能合约部署在**万纳链**节点上，我们在智能合约中提供了许多方法来确保安全的交易流程和安全的交易环境。
 
-## 第四部分:[CloudSlit-Client](https://github.com/CloudSlit/cloudslit/tree/main/client)（Zero Trust Secure Network Access Client）
+## 第五部分：[CloudSlit-verifier](#)(去中心化网络质量校验者)
+我们为去中心化可信带宽市场提供了verifier组件，任何人都可以运行网络检验者，对于正在进行的订单进行网络质量的监控，对于非法及恶劣网络提供者进行检测并惩罚。
+
+
+
+## 第五部分:[CloudSlit-Client](https://github.com/CloudSlit/cloudslit/tree/main/client)（Zero Trust Secure Network Access Client）
 
 客户端软件用户连接到提供商以建立零信任网络安全隧道。
 
