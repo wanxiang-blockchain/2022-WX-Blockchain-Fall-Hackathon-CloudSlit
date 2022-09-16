@@ -7,7 +7,7 @@
 - [我们如何建造它](#我们如何建造它)
   - [第一部分:CloudSlit-Fullnode（数据的私人检索网络全节点 - Dao Tools）](#第一部分cloudslit-fullnode数据的私人检索网络全节点---dao-tools)
   - [第二部分:CloudSlit-Provider（去中心化的数据私人检索安全网络隧道提供商 - Network Miner）](#第二部分cloudslit-provider去中心化的数据私人检索安全网络隧道提供商---network-miner)
-  - [第三部分:CloudSlit-Contracts](#第三部分cloudslit-contracts)
+  - [第三部分:CloudSlit-Contracts(智能合约：支持万纳链)](#第三部分cloudslit-contracts智能合约支持万纳链)
   - [第四部分:CloudSlit-verifier(去中心化网络质量校验者)](#第四部分cloudslit-verifier去中心化网络质量校验者)
   - [第五部分:CloudSlit-Client（数据的私人检索网络客户端）](#第五部分cloudslit-client数据的私人检索网络客户端)
 - [我们遇到的挑战](#我们遇到的挑战)
@@ -55,7 +55,7 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 <img width="952" alt="image" src="https://user-images.githubusercontent.com/34047788/190649367-aea3230f-6c87-4b74-b692-e328ed33a78f.png">
 
 
-## 第三部分:[CloudSlit-Contracts](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/contract)
+## 第三部分:[CloudSlit-Contracts](https://github.com/wanxiang-blockchain/2022-WX-Blockchain-Fall-Hackathon-CloudSlit/tree/main/codes/contract)(智能合约：支持万纳链)
 
 我们为去中心化可信带宽市场提供了完整的智能合约，我们的智能合约部署在**万纳链**节点上，我们在智能合约中提供了许多方法来确保安全的交易流程和安全的交易环境。
 
