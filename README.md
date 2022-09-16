@@ -44,7 +44,8 @@ CloudSlit项目的设计部分包括分散式全节点、网络矿工提供商�
 我们的节点通过libp2p的kademlia DHT和IPFS网络通过对等点发现和路由实现自动组网，通过libp2p的PubSub函数实现多个节点之间的数据同步。
 对于所有用户和Dao数据，我们使用Filecoin的web3.storage对用户数据进行分散存储。
 
-![https://user-images.githubusercontent.com/52234994/179186444-81e0f4de-a2c1-4607-bf66-275d20c2fe0c.png](https://user-images.githubusercontent.com/52234994/179186444-81e0f4de-a2c1-4607-bf66-275d20c2fe0c.png)
+<img width="952" alt="image" src="https://user-images.githubusercontent.com/34047788/190649367-aea3230f-6c87-4b74-b692-e328ed33a78f.png">
+
 
 ## 第三部分:[CloudSlit-Contracts](https://github.com/CloudSlit/cloudslit/tree/main/contract)
 
