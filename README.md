@@ -3,6 +3,7 @@
 - [2022-WX-Blockchain-Fall-Hackathon-CloudSlit](#2022-wx-blockchain-fall-hackathon-cloudslit)
 - [灵感](#灵感)
 - [它的作用](#它的作用)
+- [讲解视频](#讲解视频)
 - [我们如何建造它](#我们如何建造它)
   - [第一部分:CloudSlit-Fullnode（数据的私人检索网络全节点 - Dao Tools）](#第一部分cloudslit-fullnode数据的私人检索网络全节点---dao-tools)
   - [第二部分:CloudSlit-Provider（去中心化的数据私人检索安全网络隧道提供商 - Network Miner）](#第二部分cloudslit-provider去中心化的数据私人检索安全网络隧道提供商---network-miner)
@@ -27,7 +28,9 @@ CloudSlit旨在构建全球web3去中心化的私人数据检索安全网络体�
 
 <img width="1176" alt="image" src="https://user-images.githubusercontent.com/34047788/190673496-5bbb9c23-8910-4192-9911-080230934b47.png">
 
+# 讲解视频
 
+https://res.cloudinary.com/malloc/video/upload/v1663340904/cloudslit/cloudslit-vena-cn_qxedk7.mov
 
 # 我们如何建造它
 
